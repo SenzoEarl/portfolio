@@ -9,7 +9,7 @@ export const portfolioData: PortfolioData = {
     location: "Nelspruit, South Africa",
     github: "github.com/SenzoEarl",
     linkedin: "linkedin.com/in/masekose/",
-    summary: "Full-Stack Web Developer with 7+ years of project-based experience (2018–present) building, deploying, and maintaining modern web applications. Skilled in frontend frameworks, including Vue 3, Nuxt 4, and React, alongside backend development using Python and Django. Proven ability to design and deploy scalable applications using Docker, CI/CD pipelines, and cloud platforms. Strong focus on performance, security, and real-world application delivery."
+    summary: "Full-Stack Web Developer with 7+ years of project-based experience building, deploying, and maintaining modern web applications. As a systems thinker, I thrive on architecting structured, multi-layered solutions like my Django multi-app ecosystems. I am a self-directed learner, consistently teaching myself emerging techs like Nuxt 4, DRF, and advanced motion libraries to stay at the edge of development. My detail-oriented nature drives me toward correctness and rigorous structure, while my resilience allows me to tackle high-complexity engineering challenges over simple CRUD apps. Proven ability to deliver scalable, secure, and production-ready applications via Docker and CI/CD pipelines."
   },
   skillGroups: [
     {
@@ -110,9 +110,10 @@ export const portfolioData: PortfolioData = {
       ]
     },
     {
-      title: "LEARNINADE-docker",
+      title: "LEARNINANDE",
       description: "Multi-app Django platform with chat, students, and edufy modules.",
       techStack: ["Django", "Docker Compose", "Bootstrap", "Azure Pipelines", "Railway", "Gunicorn"],
+      liveUrl: "https://learninade.vercel.app",
       githubUrl: "https://github.com/SenzoEarl/LEARNINADE-docker",
       year: "2023",
       highlights: [

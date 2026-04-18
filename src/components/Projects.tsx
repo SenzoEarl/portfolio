@@ -20,6 +20,7 @@ export default function Projects() {
         href={`https://${portfolioData.personalInfo.github}`}
         target="_blank"
         rel="noopener noreferrer"
+        title="View the full collection of repositories and projects on GitHub"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         className="mt-6 w-full py-3 border border-border rounded-lg text-xs font-semibold text-center hover:bg-white/[0.03] transition-all text-text-main block shrink-0"
@@ -122,6 +123,7 @@ function ProjectItem({ project }: { project: Project }) {
             className="text-text-dim hover:text-text-main transition-colors p-1"
             onClick={(e) => e.stopPropagation()}
             aria-label={`View ${project.title} on GitHub`}
+            title={`View ${project.title} source code on GitHub`}
           >
             <Github size={14} />
           </a>
@@ -133,6 +135,7 @@ function ProjectItem({ project }: { project: Project }) {
               className="text-text-dim hover:text-text-main transition-colors p-1"
               onClick={(e) => e.stopPropagation()}
               aria-label={`View live demo of ${project.title}`}
+              title={`Visit the live website for ${project.title}`}
             >
               <ExternalLink size={14} />
             </a>

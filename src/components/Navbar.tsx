@@ -50,10 +50,10 @@ export default function Navbar() {
             </motion.a>
           ))}
           <div className="flex items-center space-x-4 border-l border-slate-700 pl-8">
-            <a href={`https://${portfolioData.personalInfo.github}`} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+            <a href={`https://${portfolioData.personalInfo.github}`} target="_blank" rel="noopener noreferrer" title="View my GitHub profile and repositories" className="text-slate-400 hover:text-white transition-colors">
               <Github size={18} />
             </a>
-            <a href={`https://${portfolioData.personalInfo.linkedin}`} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+            <a href={`https://${portfolioData.personalInfo.linkedin}`} target="_blank" rel="noopener noreferrer" title="Connect with me on LinkedIn" className="text-slate-400 hover:text-white transition-colors">
               <Linkedin size={18} />
             </a>
           </div>
@@ -89,13 +89,13 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="flex space-x-6 pt-4 border-t border-slate-700">
-                <a href={`https://${portfolioData.personalInfo.github}`} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">
+                <a href={`https://${portfolioData.personalInfo.github}`} target="_blank" rel="noopener noreferrer" title="Visit my GitHub profile" className="text-slate-400 hover:text-white">
                   <Github size={20} />
                 </a>
-                <a href={`https://${portfolioData.personalInfo.linkedin}`} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white">
+                <a href={`https://${portfolioData.personalInfo.linkedin}`} target="_blank" rel="noopener noreferrer" title="Connect with me on LinkedIn" className="text-slate-400 hover:text-white">
                   <Linkedin size={20} />
                 </a>
-                <a href={`mailto:${portfolioData.personalInfo.email}`} className="text-slate-400 hover:text-white">
+                <a href={`mailto:${portfolioData.personalInfo.email}`} title="Send me an email" className="text-slate-400 hover:text-white">
                   <Mail size={20} />
                 </a>
               </div>

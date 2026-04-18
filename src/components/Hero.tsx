@@ -15,6 +15,7 @@ export default function Hero() {
       <div className="mt-8 flex items-center gap-4">
         <motion.a 
           href={`mailto:${portfolioData.personalInfo.email}`}
+          title={`Send an email to ${portfolioData.personalInfo.email} for business inquiries`}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           className="px-8 py-3 bg-accent text-white font-bold text-xs uppercase tracking-widest rounded shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] transition-all flex items-center gap-2"

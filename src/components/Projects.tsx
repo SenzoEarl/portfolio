@@ -75,6 +75,8 @@ function ProjectItem({ project }: { project: Project }) {
   return (
     <motion.div 
       initial={false}
+      onHoverStart={() => setIsExpanded(true)}
+      onHoverEnd={() => setIsExpanded(false)}
       whileHover={{ scale: 1.015 }}
       transition={{ type: 'spring', stiffness: 350, damping: 25 }}
       onClick={() => setIsExpanded(!isExpanded)}
@@ -199,14 +201,25 @@ function ProjectItem({ project }: { project: Project }) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="mt-4 pt-4 border-t border-border/30 space-y-2"
+            className="mt-6 pt-5 border-t border-border/30"
           >
-            {project.highlights.map((highlight: string, idx: number) => (
-              <div key={idx} className="flex gap-2 text-[11px] text-text-dim leading-snug">
-                <span className="text-accent">•</span>
-                <span>{highlight}</span>
-              </div>
-            ))}
+            <span className="text-[10px] uppercase tracking-[0.2em] text-text-dim font-bold mb-4 block opacity-60">
+              Key Achievements
+            </span>
+            <div className="space-y-3">
+              {project.highlights.map((highlight: string, idx: number) => (
+                <motion.div 
+                  key={idx} 
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.05 + 0.2 }}
+                  className="flex gap-3 text-[11px] text-text-dim leading-relaxed group/highlight"
+                >
+                  <div className="mt-1.5 shrink-0 w-1 h-1 rounded-full bg-accent group-hover/highlight:scale-150 transition-transform shadow-[0_0_8px_#3b82f6]" />
+                  <span className="group-hover/highlight:text-text-main transition-colors">{highlight}</span>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

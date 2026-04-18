@@ -99,6 +99,7 @@ export const portfolioData: PortfolioData = {
       title: "Blognificent",
       description: "Production-Ready Django Platform. Full-featured blog platform with REST API, tagging, and comments.",
       techStack: ["Django 5.2", "DRF", "Docker", "Nginx", "Gunicorn", "PostgreSQL", "GitHub Actions", "SSL/TLS", "HSTS"],
+      liveUrl: "https://blognificent.vercel.app/",
       githubUrl: "https://github.com/SenzoEarl/blognificent",
       year: "2025",
       highlights: [
